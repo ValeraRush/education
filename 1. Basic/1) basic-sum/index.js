@@ -1,7 +1,8 @@
-function sum(a, b) {
-  //Напиши свой код здесь
-};
+const a = 10
+const b = 5
 
-window.sum = sum;
+function arrSum(b, a) {
+    return a + b
+}
 
-export default sum;
+console.log(arrSum(b, a));
