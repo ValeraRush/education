@@ -1,13 +1,13 @@
 function searchString(obj) {
     let text = '?'
-    const massJoin = []
+    const Array = []
     if (Object.keys(obj).length) {
         for (const elem in obj) {
             if (!!obj[elem] && obj[elem] !== '' || obj[elem] === false || obj[elem] === 0) {
-                massJoin.push(elem + '=' + obj[elem])
+                Array.push(elem + '=' + obj[elem])
             }
         }
-        return text += massJoin.join('&')
+        return text += Array.join('&')
     }
     return ''
 }
